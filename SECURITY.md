@@ -10,4 +10,4 @@ For other project concerns, see [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_
 
 ## Current scope
 
-This repository contains only a minimal Rust crate scaffold. It does not parse or execute Cambridge Pseudocode source and has no language runtime or sandbox. This policy must be updated before source execution is introduced.
+This crate parses and executes the selected Cambridge 9618 pseudocode profiles. It does not sandbox programs. Text-file operations in the command-line runner can read or write paths requested by source programs; random-record operations and other external services are supplied by the host. Do not run untrusted source with a host that grants access to sensitive files. Execution limits do not bound host I/O or all resource use.

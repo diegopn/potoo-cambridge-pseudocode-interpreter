@@ -7,8 +7,12 @@ license = "GPL-3.0-or-later"
 repository = "https://github.com/diegopn/potoo-cambridge-pseudocode-interpreter"
 homepage = "https://diegopn.github.io/potoo-site/manual/cambridge-pseudocode/"
 readme = "README.md"
-description = "An evaluation scaffold for an independent Rust implementation of Cambridge assessment pseudocode."
+description = "A Rust interpreter for the documented core of Cambridge 9618 pseudocode."
 
 [lib]
 name = "potoo_cambridge_pseudocode_interpreter"
 path = "src/lib.rs"
+
+[[bin]]
+name = "potoo-cambridge"
+path = "src/bin/potoo-cambridge.rs"
